@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+ <header>
+        <div class="logo">
+          <h1><img src="images/minilogo.png" alt="MindWell Logo">MindWell Youth Support</h1>
+          <p>Powered by Dis-Chem</p>
+        </div>
+
+        <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="cart.html" onclick="viewCart()">View Cart</a>
+</header>
+    <div class="banner">
+     🎓 Student Special:
+     Get 10% off selected wellness products with a valid student card.
+   </div>
+
+<body>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search products...">
+  </div>
+
+    <section id="products">
+        <!-- Product cards here -->
+    </section>
+
+    <section id="shop">
+      <h2>Products & Services</h2>
+
+     <div class="products">
+
+        <div class="card">
+            <h3>MindWell App</h3>
+            <img src="images/mindwelllogo.png" alt="MindWell App">
+            <p>R49/month</p>
+            <button onclick="addToCart('MindWell App',49)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Online Counselling</h3>
+            <img src="images/onlin counselling2.jpg" alt="Online Counselling">
+            <p>R150/session</p>
+            <button onclick="addToCart('Counselling Session',150)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Student Wellness Package</h3>
+            <img src="images/wellness package.jpg" alt="Student Wellness Package">
+            <p>R99/month</p>
+            <button onclick="addToCart('Student Wellness Package',99)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Self-Care Journal</h3>
+            <img src="images/selfcare journal - Copy.webp" alt="Self-Care Journal">
+            <p>R89</p>
+            <button onclick="addToCart('Self-Care Journal',89)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Stress Relief Kit</h3>
+            <img src="images/stressrelief.jpg" alt="Stress Relief Kit">
+            <p>R199</p>
+            <button onclick="addToCart('Stress Relief Kit',199)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <h3>Guided Meditation Audio</h3>
+            <img src="images/guided meditation.jpg" alt="Guided Meditation Audio">
+            <p>R29</p>
+            <button onclick="addToCart('Guided Meditation Audio',29)">Add to Cart</button>
+        </div>
+
+     </div>
+ </section>
+
+
+   <p>
+     <h2>MindWell Rewards</h2>
+      <div class="rewards">
+         <h3>Earn Points While Caring For Yourself</h3>
+         <p>Get rewards everytime you purchase wellness products or services</p>
+      </div>
+  </p>
+
+ <section>
+ <div class="container">
+
+    <p>Earn:</p>
+    <ul>
+        <li>10 points for every R100 spent</li>
+        <li>100 bouns points for app subsciption</li>
+        <li>Double points during Mental Health Awareness Month</li>
+    </ul>
+
+ </div>
+ </section>
+
+ <footer>
+    <h3>MindWell Youth Support</h3>
+
+    <p>Email: support@mindwell.co.za</p>
+
+    <p>Phone: +27 61 615 7084</p>
+
+    <p>Follow us on Instagram, Facebook and TikTok</p>
+
+ </footer>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
