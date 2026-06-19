@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book a Session</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+            }
+            h2{
+             color: #0b3c5d;
+            }
+            form{
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            label{
+                display: block;
+                margin-bottom: 10PX;
+            }
+            input, textarea{
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+            }
+            button{
+                margin-top: 15px;
+                background-color: #00a651;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #0b3c5d;
+            }
+        </style>
+    </head>
+    <header>
+        <div class="logo">
+          <h1><img src="images/minilogo.png" alt="MindWell Logo">MindWell Youth Support</h1>
+          <p>Powered by Dis-Chem</p>
+        </div>
+
+        <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book a session.html">Book a Session</a></li>
+            <li><a href="cart.html">Cart 🛒 (<span id="cartItemCount">0</span>)</a></li>
+        </ul>
+        </nav>
+        </header>
+        <body>
+            <h2>Book a Session</h2>
+            <form id="sessionForm" action="mailto:mindwellsupport@gmail.com" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Book Session</button>
+            </form>
+
+            <script src="script.js"></script>
+            <footer>
+    <h3>MindWell Youth Support</h3>
+
+    <a href="https://mail.google.com/mail/u/2/#inbox">
+      <p>Email: mindwellsupport@gmail.com</p>
+    </a>
+
+    <p>Phone: +27 61 615 7084</p>
+
+    <p>Follow us on Instagram, Facebook and TikTok</p>
+
+    </footer>
+</body>

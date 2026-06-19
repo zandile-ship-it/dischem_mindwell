@@ -20,6 +20,8 @@
             <li><a href="about.html">About</a></li>
             <li><a href="cart.html">Cart</a></li>
             <li><a href="contact.html">Contact </a></li>
+            <li><a href="book a session.html">Book a Session</a></li>
+            <li><a href="cart.html">Cart 🛒 (<span id="cartItemCount">0</span>)</a></li>
         </ul>
     </nav>
 </header>
@@ -47,10 +49,19 @@
     </div>
 
 </section>
+<form id="sessionForm" action="mailto:support@mindwell.org" method="post" enctype="text/plain">
+  <label>Name:</label><input type="text" name="name" required>
+  <label>Email:</label><input type="email" name="email" required>
+  <label>Message:</label><textarea name="message" required></textarea>
+  <button type="submit">Send Booking Request</button>
+</form>
+
 <footer>
     <h3>MindWell Youth Support</h3>
 
-    <p>Email: support@mindwell.co.za</p>
+    <a href="https://mail.google.com/mail/u/2/#inbox">
+      <p>Email: mindwellsupport@gmail.com</p>
+    </a>
 
     <p>Phone: +27 61 615 7084</p>
 

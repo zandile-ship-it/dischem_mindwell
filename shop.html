@@ -20,9 +20,11 @@
             <li><a href="about.html">About</a></li>
             <li><a href="cart.html">Cart</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="book a session.html">Book a Session</a></li>
+            <li><a href="cart.html">Cart 🛒 (<span id="cartItemCount">0</span>)</a></li>
         </ul>
     </nav>
-    <a href="cart.html" onclick="viewCart()">View Cart</a>
+  <button onclick="window.location.href='cart.html'">View Cart</button>
 </header>
     <div class="banner">
      🎓 Student Special:
@@ -30,10 +32,6 @@
    </div>
 
 <body>
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search products...">
-  </div>
-
     <section id="products">
         <!-- Product cards here -->
     </section>
@@ -48,6 +46,19 @@
             <img src="images/mindwelllogo.png" alt="MindWell App">
             <p>R49/month</p>
             <button onclick="addToCart('MindWell App',49)">Add to Cart</button>
+            <script>
+              function addToCart(productName, price) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                  existingItem.quantity += 1; // Increment quantity if item already in cart
+                } else {
+                  cart.push({ name: productName, price: price, quantity: 1 });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${productName} added to cart!`);
+              }
+            </script> 
         </div>
 
         <div class="card">
@@ -55,6 +66,19 @@
             <img src="images/onlin counselling2.jpg" alt="Online Counselling">
             <p>R150/session</p>
             <button onclick="addToCart('Counselling Session',150)">Add to Cart</button>
+            <script>
+              function addToCart(productName, price) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                  existingItem.quantity += 1; // Increment quantity if item already in cart
+                } else {
+                  cart.push({ name: productName, price: price, quantity: 1 });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${productName} added to cart!`);
+              }
+            </script>
         </div>
 
         <div class="card">
@@ -62,6 +86,19 @@
             <img src="images/wellness package.jpg" alt="Student Wellness Package">
             <p>R99/month</p>
             <button onclick="addToCart('Student Wellness Package',99)">Add to Cart</button>
+            <script>
+              function addToCart(productName, price) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                  existingItem.quantity += 1; // Increment quantity if item already in cart
+                } else {
+                  cart.push({ name: productName, price: price, quantity: 1 });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${productName} added to cart!`);
+              }
+            </script>
         </div>
 
         <div class="card">
@@ -69,6 +106,19 @@
             <img src="images/selfcare journal - Copy.webp" alt="Self-Care Journal">
             <p>R89</p>
             <button onclick="addToCart('Self-Care Journal',89)">Add to Cart</button>
+            <script>
+              function addToCart(productName, price) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                  existingItem.quantity += 1; // Increment quantity if item already in cart
+                } else {
+                  cart.push({ name: productName, price: price, quantity: 1 });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${productName} added to cart!`);
+              }
+            </script>
         </div>
 
         <div class="card">
@@ -76,6 +126,19 @@
             <img src="images/stressrelief.jpg" alt="Stress Relief Kit">
             <p>R199</p>
             <button onclick="addToCart('Stress Relief Kit',199)">Add to Cart</button>
+            <script>
+              function addToCart(productName, price) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                  existingItem.quantity += 1; // Increment quantity if item already in cart
+                } else {
+                  cart.push({ name: productName, price: price, quantity: 1 });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${productName} added to cart!`);
+              }
+            </script>
         </div>
 
         <div class="card">
@@ -83,6 +146,19 @@
             <img src="images/guided meditation.jpg" alt="Guided Meditation Audio">
             <p>R29</p>
             <button onclick="addToCart('Guided Meditation Audio',29)">Add to Cart</button>
+            <script>
+              function addToCart(productName, price) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                  existingItem.quantity += 1; // Increment quantity if item already in cart
+                } else {
+                  cart.push({ name: productName, price: price, quantity: 1 });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${productName} added to cart!`);
+              }
+            </script>
         </div>
 
      </div>
@@ -113,7 +189,9 @@
  <footer>
     <h3>MindWell Youth Support</h3>
 
-    <p>Email: support@mindwell.co.za</p>
+    <a href="https://mail.google.com/mail/u/2/#inbox">
+      <p>Email: mindwellsupport@gmail.com</p>
+    </a>
 
     <p>Phone: +27 61 615 7084</p>
 
